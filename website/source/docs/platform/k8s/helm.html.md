@@ -90,7 +90,7 @@ and consider if they're appropriate for your deployment.
   for the Consul components that this chart creates.
 
   * <a name="v-global-bootstrap-acls" href="#v-global-bootstrap-acls">`bootstrapACLs`</a> (`boolean: false`) - This flag controls
-  whether ACLs are automatically enabled within the Consul cluster. This requires both Consul servers and clients to be run within
+  whether the Helm chart automatically enables ACLs within the Consul cluster. This requires both Consul servers and clients to be run within
   Kubernetes. Requires Consul v1.5+ and consul-k8s v0.8.0+.
 
 * <a name="v-server" href="#v-server">`server`</a> - Values that configure running a Consul server within Kubernetes.
