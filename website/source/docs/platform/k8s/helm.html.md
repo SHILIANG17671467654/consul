@@ -86,7 +86,7 @@ and consider if they're appropriate for your deployment.
   * <a name="v-global-datacenter" href="#v-global-datacenter">`datacenter`</a> (`string: "dc1"`) - The name of the datacenter that the agent cluster should register as. This may not be changed once the cluster is bootstrapped and running, since Consul doesn't yet support an automatic way to change this value.
 
  * <a name="v-global-pod-security-policies" href="#v-pod-security-policies">`enablePodSecurityPolicies`</a> (`boolean: false`) -
-  This flag controls whether [PodSecurityPolicies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/) are created
+  This flag controls whether [`PodSecurityPolicies`](https://kubernetes.io/docs/concepts/policy/pod-security-policy/) are created
   for the Consul components that this chart creates.
 
   * <a name="v-global-bootstrap-acls" href="#v-global-bootstrap-acls">`bootstrapACLs`</a> (`boolean: false`) - This flag controls
@@ -356,7 +356,7 @@ to run the sync program.
   * <a name="v-connectinject-centralconfig" href="#v-connectinject-centralconfig">`centralConfig`</a> - Values that configure
   Consul's [central configuration](/docs/agent/config_entries.html) feature (requires Consul v1.5+ and consul-k8s v0.8.1+).
 
-      - <a name="v-connectinject-centralconfig-enabled" href="#v-connectinject-centralconfig-enabled">`secretName`</a> (`string: null`) -
+      - <a name="v-connectinject-centralconfig-enabled" href="#v-connectinject-centralconfig-enabled">`enabled`</a> (`boolean: false`) -
       Turns on the central configuration feature. Pods that have a Connect proxy injected will have their service
       automatically registered in this central configuration.
 
